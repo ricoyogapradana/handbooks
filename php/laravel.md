@@ -44,7 +44,7 @@ implement route from controller but use all function.
 
   create controller with resource from laravel
 
-  >     php artisan make:controller --resource PostController
+  > php artisan make:controller --resource PostController
 
 **Laravel Command**
 help command by laravel for want you to do
