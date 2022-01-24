@@ -58,18 +58,18 @@ implement route from controller but use all function.
 
   create controller name:PostController
 
-  php artisan make:controller PostController
+      php artisan make:controller PostController
 
   create controller with resource from laravel
 
-  php artisan make:controller --resource PostController
+      php artisan make:controller --resource PostController
 
 - Passing Data
 
   add parameter $id, $username, $password in method name
 
-  return view('post')->with('id',$id); or
-  return view('post', compact('id', 'username', 'password'));
+	    return view('post')->with('id',$id); or
+	    return view('post', compact('id', 'username', 'password'));
 
 ---
 
@@ -78,21 +78,19 @@ implement route from controller but use all function.
 using .blade.php format
 
 - Setup content:
-  import or extends to using the layout or template. layout is folder and app is name of template file (app.blade.php)
+  import or extends to using the layout or template. layout is folder and app is name of template file (app.blade.php).
 
-        @extends('layout.app')
-      start of setup of content of content
+      @extends('layout.app')
+	start  and end of setup of content of content.
 
-        @section('content')
-
-      stop or end of setup of content
-
-        @stop
+	  @section('content')
+	    //Drop your content here :)
+	  @stop
 
 - Showing of content:
 
-  @yield('content') //show content of content
-  @yield('footer') //show content of footer
+      @yield('content') //show content of content
+      @yield('footer') //show content of footer
 
 ---
 
@@ -129,6 +127,32 @@ using .blade.php format
         php artisan migrate
 
 ---
+**Create Read Update Delete (CRUD)**
+
+> Before you go make sure you understand basic of sql command :)
+
+- Create or Insert data
+
+	  DB::insert('insert into posts(title, content) values (?, ?)', ['PHP with laravel', 'hehe']);
+
+- Read data
+
+	  $result = DB::select('select * from posts where id = ?', [1]); //create variable result
+	    
+	  return $result; //return variable
+
+- Update data
+
+	  $update = DB::update('update posts set title = "Update Title" where id = ?', [1]); //create variable result
+	    
+	  return $update; //return variable
+
+- Delete data
+
+	  $delete = DB::delete('delete from posts where id = ?', [1]); //create variable result
+
+return $delete; //return variable
+---
 
 **Laravel Command**
 help command by laravel for want you to do
@@ -146,3 +170,4 @@ create controller name:PostController
 create controller with resource from laravel
 
 > php artisan make:controller --resource PostController
+
