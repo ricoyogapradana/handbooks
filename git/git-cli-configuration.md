@@ -1,5 +1,22 @@
 # Git CLI Configuration
 
+**Installasi GIT**
+Windows
+> Download https://git-scm.com/downloads
+
+Linux
+    
+> **RPM-based distribution, such as RHEL or CentOS), you can use dnf:**
+sudo dnf install git-all
+
+> **Debian-based distribution, such as Ubuntu, try apt:**
+sudo apt install git
+
+Mac OS
+> Download https://git-scm.com/downloads
+
+---
+
 
 **Git Login**
 Inisialisasi username dan Email pada PC
@@ -21,6 +38,8 @@ xclip -sel clip < ~/.ssh/id_ed25519.pub
 > **Git Bash on Windows:**
 cat ~/.ssh/id_ed25519.pub | clip
 
+---
+
 **Inisialisasi SSH dari PC ke GITHUB**
 > - Klik link ini : https://github.com/settings/keys
 > - Klik New SSH Key
@@ -30,6 +49,7 @@ cat ~/.ssh/id_ed25519.pub | clip
 > - Masukkan Password akun github
 > - Selesai
 
+---
 
 **Meng-Clone Github Repository to Local Computer**
     
