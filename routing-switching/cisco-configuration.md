@@ -1,20 +1,12 @@
 # Cisco Configuration
 
 **Router add IP Address**
-<<<<<<< HEAD
     
     router>en
     router#conf
     config#int fa0/0
     config-if#ip add [ipaddress] [netmask]
     config-if#no sh
-=======
-> router>en
-> router#conf
-> config#int fa0/0
-> config-if#ip add [ipaddress] [netmask]
-> config-if#no sh
->>>>>>> f6a16b68114343a4ab57f57c63cc6f68d207e6f8
 
 
 **Route Command [static]**
