@@ -2,10 +2,10 @@
 
 **Router add IP Address**
 > router>en
-router#conf
-config#int fa0/0
-config-if#ip add [ipaddress] [netmask]
-config-if#no sh
+> router#conf
+> config#int fa0/0
+> config-if#ip add [ipaddress] [netmask]
+> config-if#no sh
 
 
 **Route Command [static]**
