@@ -14,6 +14,10 @@ Membuat database
 
     create database nama_database;
 
+Mendelete / Menghapus database
+
+    drop database nama_database;
+
 Masuk kedalam database
 
     use nama_database;
