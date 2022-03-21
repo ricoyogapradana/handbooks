@@ -12,6 +12,9 @@ sudo dnf install git-all
 > **Debian-based distribution, such as Ubuntu, try apt:**
 sudo apt install git
 
+> **OpenSUSE**
+sudo zypper install git
+
 Mac OS
 > Download https://git-scm.com/downloads
 
