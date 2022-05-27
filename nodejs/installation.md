@@ -25,7 +25,7 @@ Step 6: Copy node folder to usr directory
 
     sudo cp -r node_directory_name/{bin,include,lib,share} /usr/
 
-Step 7: Update the Path 
+Step 7: Update the Path ( Jika Diperlukan )
 
     export PATH=/usr/node_directory_name/bin:$PATH
 
