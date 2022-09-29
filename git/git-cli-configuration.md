@@ -23,6 +23,7 @@ Mac OS
 
 **Git Login**
 Inisialisasi username dan Email pada PC
+
     git config --global user.name <github_username>
     git config --global user.email <email yang digunakan pada username>
 
